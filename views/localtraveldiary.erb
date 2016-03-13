@@ -1,0 +1,55 @@
+<!doctype html>
+
+<head>
+<title>My Holiday Diary</title>
+
+<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css" rel="stylesheet"> 
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/styles/main.css">
+<link href='https://fonts.googleapis.com/css?family=Poiret+One|Indie+Flower|Permanent+Marker' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<h1>My Holiday Diary</h1>
+	
+	<div><h2>Your Saved Holidays</h2></div>
+	
+	<div id="New-York">
+		<h3>New York<h3>
+		<p>I went on holiday to New York with my friends. I really enjoyed trying the local bagels and visiting the Empire State Building. I will never forget walking through Central Park in the snow. </p>
+	</div> 
+	
+	<div id="Tokyo">
+		<h3>Tokyo<h3>
+		<p>I went on holiday to Tokyo with my coursemates. I really enjoyed trying the local sushi and visiting the Imperial Palace. I will never forget singing karaoke with my friend Jess. </p>
+	</div>
+	
+	<div id="barcelona">
+		<h3>Barcelona<h3>
+		<p>I went on holiday to Barcelona with my family. I really enjoyed trying the local tapas and visiting La Pedrera. I will never forget swimming in the sea in the mornings. </p>
+	</div>
+	
+	<div id="holiday-form">
+		<h2>Enter new holiday</h2> 
+		<form method="post" action="/input">
+			<label for="destination">Destination?: </label>
+			<input type="text" id="destination" name="destination" value="" placeholder="Paris" required="required" autofocus="autofocus"/> 
+			<br>
+			<label for="companions">Who did you go with?: </label>
+			<input type="text" id="companions" name="companions" value="" placeholder="My family" required="required"/>
+			<br>
+			<label for="food">What was your favourite local food?: </label>
+			<input type="text" id="food" name="food" value="" placeholder="Crossiants" required="required"/>
+			<br>
+			<label for="attraction">What was the best place you visited?: </label>
+			<input type="text" id="attraction" name="attraction" value="" placeholder="The Eifell Tower" required="required"/>
+			<br>
+			<label for="memory">What was your favourite memory?: </label>
+			<input type="text" id="memory" name="memory" value="" placeholder="Seeing the Mona Lisa" required="required"/>
+			<br>
+			<input class="btn btn-deafault" type="submit" value="submit" id="submit-button">
+		</form>
+	</div>
+</body>
+<end>

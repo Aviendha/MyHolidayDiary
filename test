@@ -1,0 +1,22 @@
+twitter_api = Twitter::REST::Client.new do |config|
+	config.consumer_key = "utqcfFy0D4SnT4sqdepuClLzS"
+	config.consumer_secret = "DPpCzSxIxNWVMVmQwg5copY0SxdXgmzDxTCIoHWHuHNlkXqD9m"
+	config.access_token = "120134243-psqhZigNAOsCefeCy8LmVhwcmkwzJScghVJXTTI6"
+	config.access_token_secret = "tBvd18God4cNeYkGMe0XF7PLegrN9mOfG2Binjm3OEYyc"
+end
+
+get ('/') do 
+	@new_york_tweets = twitter_api.search("NewYorkCity", result_type: "recent").take(3)
+	erb :localtraveldiary
+end
+
+require 'twitter'
+
+
+<ul>
+  			<% @new_york_tweets.each do |tweet| %>
+   			<li><strong><%= tweet[:user] %></strong><br/>
+    		<%= tweet[:text] %>
+    		</li>
+  			<% end %>
+		</ul>

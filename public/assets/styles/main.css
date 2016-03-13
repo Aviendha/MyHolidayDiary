@@ -1,0 +1,67 @@
+body {
+	background-image: url("../images/gradient_bg.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	font-size: 100;
+	font-family:'Permanent Marker', Arial;
+}
+
+h2 {
+	text-align: center;
+	font-size: 40;
+	font-family: 'Poiret One', Arial;
+	color: red;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Indie Flower', Arial;
+	font-size: 18;
+}
+
+p {
+	font-size: 14;
+	font-family: 'Indie Flower', Arial;
+	text-align: center;
+}
+
+#holiday-form {
+	text-align: center;
+	font-family: 'Poiret One', Arial;
+	font-weight: bold;
+	font-size: 20;
+}
+
+#destination {
+	margin: 10px;
+}
+
+#companions {
+	margin:10px;
+}
+
+#memory {
+	margin: 10px;
+}
+
+#food {
+	margin: 10px;
+}
+
+#attraction {
+	margin: 10px;
+}
+
+#submit-button {
+	margin: 30px;
+	font-family: 'Poiret One', Arial;
+	font-size: 100;
+	font-weight: bold;
+}
